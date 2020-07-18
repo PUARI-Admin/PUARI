@@ -1,0 +1,104 @@
+.header-left {
+	display: table-cell;
+	color: black;
+	width: 1000px;
+	height: 100px;
+	vertical-align: middle;
+	margin: 20px;
+	padding: 20px;
+}
+
+.header-right {
+	display: table-cell;
+	color: black;
+	width: 350px;
+	height: 100px;
+	vertical-align: middle;
+	margin: 20px;
+	padding: 20px;
+	text-align: right;
+}
+
+main{
+  display: flex;
+  height: 70%;
+   flex-direction: column;
+
+/*  background-color: gray; */
+}
+
+.center-top {
+	height: 5%;
+	text-align: left;
+	margin-left: 200px;
+/* 	background-color: blue; */
+}
+
+.center-center {
+	display: table-cell;
+	height: 55%;
+	text-align: left;
+	vertical-align:bottom;
+	margin-left: 200px;
+	padding-left:120px;
+/* 	background-color: orange; */
+}
+
+.center-bottom {
+	height: 40%;
+	text-align: left;
+
+	vertical-align: middle;
+	margin-left: 200px;
+	padding-left:120px;
+/* 	background-color: yellow; */
+}
+
+.footer-left {
+	width: 70%;
+	/*  background-color: blue; */
+}
+
+.footer-center {
+	width: 10%;
+	/*  background-color: green; */
+}
+
+.footer-right {
+	width: 20%;
+		/*  background-color: red; */
+}
+
+
+.image {
+	position: absolute;
+	top: 240px;
+	left: 600px;
+}
+
+button {
+	width: 130px;
+	height: 60px;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.header-label{
+	font-size: 40px;
+}
+
+.count-label{
+	font-size: 90px;
+}
+
+.jukugo {
+	font-size: 250px;
+}
+
+
+.yomi {
+	width: 100px;
+	padding:10px;
+	font-size: 130px;
+	color: red;
+}

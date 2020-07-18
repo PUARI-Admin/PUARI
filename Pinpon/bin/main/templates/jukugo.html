@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="utf-8" />
+<title>ピンポン熟語</title>
+<link rel="stylesheet" th:href="@{/css/jukugo.css}" type="text/css">
+<link rel="stylesheet" th:href="@{/css/common.css}" type="text/css">
+
+<script type="text/javascript">
+
+document.onkeydown = function(e) {
+
+	var keyCode = false;
+	if (e) event = e;
+	if (event) {
+		if (event.keyCode) {
+			keyCode = event.keyCode;
+
+	        if(keyCode == 37) {
+	    		next_action();
+	        } else if (keyCode == 38) {
+	          	OK();
+	        } else if (keyCode == 39) {
+	           	NG();
+	        }
+
+	    } else if (event.which) {
+	    	keyCode = event.which;
+	    }
+	}
+};
+
+function next_action() {
+
+	var grade = document.getElementsByName("hidden_grade")[0].value
+	var action_path = "/jukugo/" + grade
+	document.next_form.action=action_path;
+	document.next_form.method="post";
+	document.next_form.submit();
+}
+
+function seiseki() {
+
+	var grade = document.getElementsByName("hidden_grade")[0].value
+	var action_path = "/jukugo/seiseki/" + grade
+	document.next_form.action=action_path;
+	document.next_form.method="post";
+	document.next_form.submit();
+}
+
+var total_count = 0;
+var audioElem;
+var yomi_ok_count = 0;
+var yomi_ng_count = 0;
+
+function OK() {
+
+	audioElem = new Audio();
+	audioElem.src = "/audio/seikai.mp3";
+	audioElem.play();
+
+	total_count = [[${jukugo.getTotalCount()}]] + 1;
+	yomi_ok_count = [[${jukugo.getYomi_ok()}]];
+	yomi_ng_count = [[${jukugo.getYomi_ng()}]];
+	yomi_ok_count = yomi_ok_count + 1;
+	yomi_ng_count = yomi_ng_count;
+
+	document.getElementById("ok_button").disabled = true;
+	document.getElementById("ng_button").disabled = true;
+	document.getElementById("gazou").src = "/image/maru.png";
+	document.getElementById("total_count").textContent = total_count;
+	document.getElementsByName("hidden_total_count")[0].value = total_count;
+
+	setAnswer();
+}
+
+function NG(){
+	audioElem = new Audio();
+	audioElem.src = "/audio/spring.mp3";
+	audioElem.play();
+
+	yomi_ok_count = [[${jukugo.getYomi_ok()}]];
+	yomi_ng_count = [[${jukugo.getYomi_ng()}]];
+	yomi_ok_count = yomi_ok_count;
+	yomi_ng_count = yomi_ng_count + 1;
+
+	document.getElementById("ok_button").disabled = true;
+	document.getElementById("ng_button").disabled = true;
+	document.getElementById("gazou").src = "/image/batsu.png";
+
+	setAnswer();
+}
+
+function setAnswer() {
+
+	document.getElementById("yomi").textContent = document.getElementsByName("hidden_yomi")[0].value;
+	document.getElementById("ok_history").textContent = yomi_ok_count;
+	document.getElementsByName("hidden_ok_count")[0].value = yomi_ok_count;
+	document.getElementById("ng_history").textContent = yomi_ng_count;
+	document.getElementsByName("hidden_ng_count")[0].value = yomi_ng_count;
+}
+
+</script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header-left">
+			<span class="header-label">
+			<label>正解</label> <label id="ok_history">[[${jukugo.getYomi_ok()}]]</label>
+			<label>回　不正解 </label> <label id="ng_history">[[${jukugo.getYomi_ng()}]]</label>
+			<label>回</label>
+			</span>
+		</div>
+		<div class="header-right">
+			<label class="count-label" id="total_count">[[${jukugo.getTotalCount()}]]</label>
+		</div>
+	</header>
+
+	<main>
+		<div class="center-top"></div>
+
+		<div class="center-center">
+			<label class="jukugo">[[${jukugo.getJukugo()}]]</label>
+			<img class="image" id="gazou" th:src="@{/image/toumei.png}" width="300" height="300">
+		</div>
+		<div class="center-bottom">
+			<label class="yomi" id="yomi"></label>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer-left">
+			<button class="modoru" onclick="location.href='/jukugo'" name="modoru">戻る</button>
+			<button class="seiseki" onclick="seiseki();" name="seiseki">成績</button>
+		</div>
+
+		<div class="footer-center">
+			<form method="post" name="next_form" enctype="multipart/form-data"
+				th:object="${sendForm}">
+				<input type="hidden" name="hidden_id" th:value="${jukugo.getId()}">
+				<input type="hidden" name="hidden_jukugo" th:value="${jukugo.getJukugo()}">
+				<input type="hidden" name="hidden_yomi" th:value="${jukugo.getYomi()}">
+				<input type="hidden" name="hidden_ok_count" th:value="${jukugo.getYomi_ok()}">
+				<input type="hidden" name="hidden_ng_count" th:value="${jukugo.getYomi_ng()}">
+				<input type="hidden" name="hidden_total_count" th:value="${jukugo.getTotalCount()}">
+				<input type="hidden" name="hidden_grade" th:value="${jukugo.getGrade()}">
+				<button type="submit" onclick="next_action();" name="next">次へ</button>
+			</form>
+		</div>
+
+		<div class="footer-right">
+			<button type="submit" id="ok_button" onclick="OK();" name="ok">○</button>
+			<button type="submit" id="ng_button" onclick="NG();" name="ng">×</button>
+		</div>
+	</footer>
+</body>
+</html>
+

@@ -1,0 +1,127 @@
+.header-left {
+	width: 30%;
+	text-align: left;
+	padding-left: 30px;
+/*	  background-color: yellow;*/
+}
+
+.header-center {
+	width: 50%;
+	vertical-align: bottom;
+	text-align: left;
+/*	  background-color: red;*/
+
+}
+
+.header-right {
+	width: 20%;
+	vertical-align: middle;
+	text-align: right;
+/*	  background-color: blue;*/
+}
+
+.center-left {
+	width: 70%;
+	text-align: center;
+	margin-top: -100px;
+}
+
+.center-right {
+	width: 30%;
+	text-align: center;
+	color: #fff;
+	/*  background-color: red; */
+}
+
+.footer-left {
+	width: 70%;
+	/*  background-color: blue; */
+}
+
+.footer-center {
+	width: 10%;
+	/*  background-color: green; */
+}
+
+.footer-right {
+	width: 20%;
+	/*  background-color: red; */
+}
+
+ul.ul_footer_form {
+	display: flex;
+	width: 950px;
+	justify-content: space-evenly;
+	list-style: none;
+}
+
+ul.ul_footer_sound {
+	display: flex;
+	width: 300px;
+	justify-content: space-evenly;
+	list-style: none;
+}
+
+ul.ul_right {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+	text-align: left;
+	color: black;
+}
+
+.onyomi-label {
+	color: blue;
+}
+
+.kunyomi-label {
+	color: red;
+}
+
+.image {
+	position: absolute;
+	top: 240px;
+	left: 240px;
+}
+
+button {
+	width: 130px;
+	height: 60px;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.header-label{
+	font-size: 50px;
+}
+
+.count-label{
+	font-size: 90px;
+}
+
+.kanji_label {
+	font-size: 520px;
+	margin-top: -150px;
+	margin-bottom: 0px;
+}
+
+.onyomi_label {
+	width: 100px;
+	padding: 10px;
+	font-size: 55px;
+	color: blue;
+}
+
+.kunyomi_label {
+	width: 100px;
+	padding: 10px;
+	font-size: 55px;
+	color: red;
+}
+
+.answer_label {
+	width: 100px;
+	padding:10px;
+	font-size: 40px;
+}

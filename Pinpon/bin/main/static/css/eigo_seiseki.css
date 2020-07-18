@@ -1,0 +1,87 @@
+.header-label {
+	font-size: 50px;
+}
+
+.header-left {
+	width: 30%;
+	text-align: left;
+	padding-left: 30px;
+	/* 	  background-color: yellow; */
+}
+
+.header-center {
+	width: 50%;
+	vertical-align: bottom;
+	text-align: left;
+	/*	background-color: red;*/
+}
+
+.header-right {
+	width: 20%;
+	vertical-align: middle;
+	text-align: right;
+	/*	background-color: blue;*/
+}
+
+table {
+	/* height:500px; */
+	width: 1000px;
+	border-collapse: collapse;
+	font-size: 15px;
+	background-color: white;
+}
+
+table th, table td {
+	border: 1px solid #ddd;
+	padding: 6px;
+}
+
+.center-center table tbody {
+
+}
+
+table th {
+	background-color: #F2F2F2;
+}
+
+table td {
+	height: 10px;
+}
+
+.fixed {
+	position: sticky;
+	top: 0;
+	color: #fff;
+	background: #333;
+}
+
+.center-left {
+	/*  background-color: blue; */
+	width: 15%;
+}
+
+.center-center {
+	width: 75%;
+	/*  background-color: green;*/
+	overflow: auto;
+}
+
+.center-right {
+	width: 0%;
+}
+
+.id {
+	width: 5%;
+	text-align: center;
+}
+
+.jukugo {
+	width: 10%;
+	color: blue;
+	text-align: center;
+}
+
+.answer {
+	width: 10%;
+	text-align: center;
+}
