@@ -230,7 +230,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="aT6A9Q6jMf5LsFobaYhJ" name="メインメニュー">
-        <mxGraphModel dx="1388" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1388" dy="415" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="CULyjao5klgjcF2hUYCP-0"/>
                 <mxCell id="CULyjao5klgjcF2hUYCP-1" parent="CULyjao5klgjcF2hUYCP-0"/>
@@ -336,7 +336,7 @@
         </mxGraphModel>
     </diagram>
     <diagram name="ユーザ登録申請承認画面" id="aIK4GHHftPLd69BOb62e">
-        <mxGraphModel dx="1388" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1388" dy="415" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="jErxFJ4r04NVoC-xoVK6-0"/>
                 <mxCell id="jErxFJ4r04NVoC-xoVK6-1" parent="jErxFJ4r04NVoC-xoVK6-0"/>

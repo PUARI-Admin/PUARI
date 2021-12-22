@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { SidebarComponent } from './layouts/sidebar/sidebar.component'
 
 import { MaterialExampleModule } from './material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -17,13 +16,20 @@ import { TopbarComponent } from './layouts/topbar/topbar.component';
 import { FootbarComponent } from './layouts/footbar/footbar.component';
 import { MainComponent } from './layouts/main/main.component';
 import { MatList, MatListModule } from '@angular/material/list';
+import { ApplicationlistComponent } from './applicationlist/applicationlist.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent,
     TopbarComponent,
     FootbarComponent,
-    MainComponent
+    MainComponent,
+    ApplicationlistComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +43,9 @@ import { MatList, MatListModule } from '@angular/material/list';
     MatNativeDateModule,
     HttpClientModule,
     MatListModule,
+    LayoutModule,
+    MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
