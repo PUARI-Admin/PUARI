@@ -9,6 +9,7 @@ TODO
 　・ユーザ登録申請
 　　・登録画面
 　　・承認画面
+　　
 ３，PC環境を整える(ko-jiさん)
 　・VSCode
 　・Docker
@@ -16,5 +17,7 @@ TODO
 　　　Docker version 20.10.11, build dea9396
 　　・docker-compose -v
 　　　docker-compose version 1.29.2, build 5becea4c
-
+　・angular
+　　・記載しておく（石川）
+　
 ４，Slack作成（石川）
