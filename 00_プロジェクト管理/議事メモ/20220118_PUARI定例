@@ -1,10 +1,16 @@
 【議事メモ】
 ・環境の構築手順を説明
-　①ローカル環境の/xxx/PUARI/Angular直下でdocker-compose up -d（https://qiita.com/A-Kira/items/8693a78873ca9cab0738）
-　②コンテナを右クリック→Atattch shell （VSCodeのdocker拡張機能使用）
-　③コンテナ内で ng serve --host 0.0.0.0 --port 4200
-　④ローカル環境のブラウザでlocalhost:4200へアクセス
-・
+　①ローカル環境の/xxx/PUARI/Angular直下でdocker-compose up -d
+　　→「-d」はデバッグモードで起動する意味。本番環境ではログ削減のため-dはつけないらしい。
+　②docker-compose exec node bash
+　③コンテナ内でcd puari 
+　④コンテナ内で ng serve --host 0.0.0.0 --port 4200
+　⑤ローカル環境のブラウザでlocalhost:4200へアクセス
+　参考URL
+　https://qiita.com/A-Kira/items/8693a78873ca9cab0738
+
+・VSCodeの拡張機能
+　・
 
 【TODO】
 ・実装（〜2/1）
