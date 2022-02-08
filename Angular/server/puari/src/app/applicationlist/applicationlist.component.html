@@ -1,13 +1,3 @@
-<!-- <div fxLayout="column">
-    <div fxFlex="10%" style="background-color: blue; color: white" fxLayoutAlign="center center">
-        <h1>
-            <b>申請一覧</b>
-        </h1>
-    </div>
-    <div fxFlex="50%" style="background-color: bisque" fxLayoutAlign="center center">ここに検索フォーム</div>
-    <div fxFlex="40%" style="background-color: darkseagreen" fxLayoutAlign="center center">結果</div>
-</div> -->
-
 <mat-grid-list cols="8" rowHeight="2:1">
     <mat-grid-tile [colspan]="8">
         <h1>
@@ -43,42 +33,14 @@
 
 <mat-divider></mat-divider>
 
-<mat-grid-list cols="8" rowHeight="140px">
+<mat-grid-list cols="8" rowHeight="140px" *ngFor="let application of applicationList">
     <mat-grid-tile [colspan]="8">
-        <mat-card>
-            <mat-card-title>#野村　太郎</mat-card-title>
-            <mat-card-subtitle>社員番号</mat-card-subtitle>
-            <mat-card-subtitle>メールアドレス</mat-card-subtitle>
-            <mat-card-subtitle>申請種別</mat-card-subtitle>
-            <mat-card-footer align="end">#1時間前</mat-card-footer>
+        <mat-card (click)="onCardClick(application)" matRipple class="clickable">
+            <mat-card-title>{{application.name.lastname}}{{application.name.firstname}}</mat-card-title>
+            <mat-card-subtitle>{{application.employeeNum}}</mat-card-subtitle>
+            <mat-card-subtitle>{{application.mail}}</mat-card-subtitle>
+            <mat-card-subtitle>{{application.category | category}}</mat-card-subtitle>
+            <mat-card-footer align="end">{{application.date}}</mat-card-footer>
         </mat-card>
     </mat-grid-tile>
-    <mat-grid-tile [colspan]="8">
-        <mat-card>
-            <mat-card-title>#野村　太郎</mat-card-title>
-            <mat-card-subtitle>社員番号</mat-card-subtitle>
-            <mat-card-subtitle>メールアドレス</mat-card-subtitle>
-            <mat-card-subtitle>申請種別</mat-card-subtitle>
-            <mat-card-footer align="end">#1時間前</mat-card-footer>
-        </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile [colspan]="8">
-        <mat-card>
-            <mat-card-title>#野村　太郎</mat-card-title>
-            <mat-card-subtitle>社員番号</mat-card-subtitle>
-            <mat-card-subtitle>メールアドレス</mat-card-subtitle>
-            <mat-card-subtitle>申請種別</mat-card-subtitle>
-            <mat-card-footer align="end">#1時間前</mat-card-footer>
-        </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile [colspan]="8">
-        <mat-card>
-            <mat-card-title>#野村　太郎</mat-card-title>
-            <mat-card-subtitle>社員番号</mat-card-subtitle>
-            <mat-card-subtitle>メールアドレス</mat-card-subtitle>
-            <mat-card-subtitle>申請種別</mat-card-subtitle>
-            <mat-card-footer align="end">#1時間前</mat-card-footer>
-        </mat-card>
-    </mat-grid-tile>
-
 </mat-grid-list>

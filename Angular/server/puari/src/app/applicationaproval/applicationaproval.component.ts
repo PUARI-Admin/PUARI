@@ -1,17 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { APPLICATION_LIST } from './models/applicationDammy';
+import { APPLICATION_LIST } from '../applicationlist/models/applicationDammy';
 
 @Component({
-  selector: 'app-applicationlist',
-  templateUrl: './applicationlist.component.html',
-  styleUrls: ['./applicationlist.component.scss']
+  selector: 'app-applicationaproval',
+  templateUrl: './applicationaproval.component.html',
+  styleUrls: ['./applicationaproval.component.scss']
 })
-export class ApplicationlistComponent implements OnInit {
-
+export class ApplicationaprovalComponent implements OnInit {
   applicationList = APPLICATION_LIST;
   application: any;
-  
+
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -21,8 +20,4 @@ export class ApplicationlistComponent implements OnInit {
     })
   }
 
-  public onCardClick(data: any){
-    console.log(data);
-
-  }
 }

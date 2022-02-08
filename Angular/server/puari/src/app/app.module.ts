@@ -21,6 +21,10 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { LogoutComponent } from './logout/logout.component';
+import { ApplicationaprovalComponent } from './applicationaproval/applicationaproval.component';
+import { StoreModule } from '@ngrx/store';
+import { CategoryPipe } from './category.pipe';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,10 @@ import { MatIconModule } from '@angular/material/icon';
     FootbarComponent,
     MainComponent,
     ApplicationlistComponent,
-    SidenavComponent
+    SidenavComponent,
+    LogoutComponent,
+    ApplicationaprovalComponent,
+    CategoryPipe
   ],
   imports: [
     BrowserModule,
@@ -46,6 +53,7 @@ import { MatIconModule } from '@angular/material/icon';
     LayoutModule,
     MatButtonModule,
     MatIconModule,
+    StoreModule.forRoot({}, {}),
   ],
   providers: [],
   bootstrap: [AppComponent]
