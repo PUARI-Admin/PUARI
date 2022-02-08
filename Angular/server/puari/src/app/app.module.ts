@@ -16,20 +16,13 @@ import { TopbarComponent } from './layouts/topbar/topbar.component';
 import { FootbarComponent } from './layouts/footbar/footbar.component';
 import { MainComponent } from './layouts/main/main.component';
 import { MatList, MatListModule } from '@angular/material/list';
-import { ApplicationlistComponent } from './applicationlist/applicationlist.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-<<<<<<< Updated upstream
-import { LogoutComponent } from './logout/logout.component';
-import { ApplicationaprovalComponent } from './applicationaproval/applicationaproval.component';
-import { StoreModule } from '@ngrx/store';
-import { CategoryPipe } from './category.pipe';
-=======
 import { LoginComponent } from './login/login.component';
 import { UserregisterComponent } from './userregister/userregister.component';
->>>>>>> Stashed changes
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -37,16 +30,9 @@ import { UserregisterComponent } from './userregister/userregister.component';
     TopbarComponent,
     FootbarComponent,
     MainComponent,
-    ApplicationlistComponent,
     SidenavComponent,
-<<<<<<< Updated upstream
-    LogoutComponent,
-    ApplicationaprovalComponent,
-    CategoryPipe
-=======
     LoginComponent,
     UserregisterComponent
->>>>>>> Stashed changes
   ],
   imports: [
     BrowserModule,
