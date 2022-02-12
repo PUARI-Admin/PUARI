@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { UserregisterComponent } from './userregister/userregister.component'
 
 const routes: Routes = [
+  { path: '', component: LoginComponent},
   { path: 'applist', component: ApplicationlistComponent },
   { path: 'details/:id', component: ApplicationaprovalComponent },
   { path: 'reject', component: FinishComponent },
