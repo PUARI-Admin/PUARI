@@ -1,22 +1,16 @@
-.sidenav-container {
+.example-container {
   height: 100%;
+  margin: 0px;
+  border: 1px solid #555;
 }
 
-.sidenav {
-  width: 200px;
-  position: absolute;
-  top: 64px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
+.link-list {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 24px;
 
-.mat-toolbar {
-  background: inherit;
-}
-
-.mat-toolbar.mat-primary {
-  position: sticky;
-  top: 0;
-  z-index: 1;
+  .mat-list-item {
+    font-size: large;
+  }
 }

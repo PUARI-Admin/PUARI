@@ -11,20 +11,10 @@
     padding-top: 24px;
 }
 
-.mat-subheader {
-    padding-top:48px;
-    padding-left: 0;
-    font-size: x-large;
-    
-}
-
-.mat-line {
-    font-size:larger;
-}
-
-h2 {
-    margin-bottom:0;
-    margin-top:24px;
+.details {
+    display: flex;
+    justify-content: center;
+    font-size: large;
 }
 
 .button-area {

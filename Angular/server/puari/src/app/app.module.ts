@@ -25,6 +25,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { ApplicationaprovalComponent } from './applicationaproval/applicationaproval.component';
 import { StoreModule } from '@ngrx/store';
 import { CategoryPipe } from './category.pipe';
+import { FinishComponent } from './finish/finish.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { CategoryPipe } from './category.pipe';
     SidenavComponent,
     LogoutComponent,
     ApplicationaprovalComponent,
-    CategoryPipe
+    CategoryPipe,
+    FinishComponent
   ],
   imports: [
     BrowserModule,

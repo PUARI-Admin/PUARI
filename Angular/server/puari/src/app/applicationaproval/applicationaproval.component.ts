@@ -15,8 +15,8 @@ export class ApplicationaprovalComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(map => {
-      const employeeNum: any = map.get('employeeNum');
-      this.application = this.applicationList[employeeNum]
+      const id = +map.get('id')!;
+      this.application = this.applicationList[id - 1];
     })
   }
 
