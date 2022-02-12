@@ -27,6 +27,7 @@ import { CategoryPipe } from './category.pipe';
 import { FinishComponent } from './finish/finish.component';
 import { LogoutComponent } from './logout/logout.component';
 import { ApplicationaprovalComponent } from './applicationaproval/applicationaproval.component';
+import { ApplicationlistComponent } from './applicationlist/applicationlist.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ApplicationaprovalComponent } from './applicationaproval/applicationapr
     UserregisterComponent,
     LogoutComponent,
     ApplicationaprovalComponent,
+    ApplicationlistComponent,
     CategoryPipe,
     FinishComponent
   ],
