@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { APPLICATION_LIST } from '../applicationlist/models/applicationDammy';
+// import { APPLICATION_LIST } from '../applicationlist/models/applicationDammy';
 
 @Component({
   selector: 'app-applicationaproval',
@@ -8,7 +8,7 @@ import { APPLICATION_LIST } from '../applicationlist/models/applicationDammy';
   styleUrls: ['./applicationaproval.component.scss']
 })
 export class ApplicationaprovalComponent implements OnInit {
-  applicationList = APPLICATION_LIST;
+  // applicationList = APPLICATION_LIST;
   application: any;
 
   constructor(private route: ActivatedRoute) { }
@@ -16,7 +16,7 @@ export class ApplicationaprovalComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe(map => {
       const employeeNum: any = map.get('employeeNum');
-      this.application = this.applicationList[employeeNum]
+      // this.application = this.applicationList[employeeNum]
     })
   }
 
