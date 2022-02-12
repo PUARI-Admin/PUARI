@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="wIIKfTXYPo-jXd4jVzx_" name="ログイン画面">
-        <mxGraphModel dx="1271" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1271" dy="617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -35,7 +35,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="1c5GtA1rQ8Ya5Te1sATS" name="ユーザ登録申請画面">
-        <mxGraphModel dx="1271" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1271" dy="617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="jr_WpWsysq6u5nfQh95n-0"/>
                 <mxCell id="jr_WpWsysq6u5nfQh95n-1" parent="jr_WpWsysq6u5nfQh95n-0"/>
@@ -115,7 +115,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="VRFN9ju30AnpmGk7SGTM" name="ユーザ登録申請確認画面">
-        <mxGraphModel dx="1271" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1271" dy="617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="yyAXgVEXHaTDZk3MTtLe-0"/>
                 <mxCell id="yyAXgVEXHaTDZk3MTtLe-1" parent="yyAXgVEXHaTDZk3MTtLe-0"/>
@@ -201,7 +201,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="jOdPU2xGosbtRZu1orI5" name="申請完了画面">
-        <mxGraphModel dx="1271" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1271" dy="617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="UNjmTbNTnwr-YBqmF-ju-0"/>
                 <mxCell id="UNjmTbNTnwr-YBqmF-ju-1" parent="UNjmTbNTnwr-YBqmF-ju-0"/>

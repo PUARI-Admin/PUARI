@@ -1,7 +1,5 @@
-import { Component } from '@angular/core';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Observable } from 'rxjs';
-import { map, shareReplay } from 'rxjs/operators';
+import { ChangeDetectorRef, Component } from '@angular/core';
+import { BreakpointObserver, Breakpoints, MediaMatcher } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-sidenav',
@@ -9,13 +7,4 @@ import { map, shareReplay } from 'rxjs/operators';
   styleUrls: ['./sidenav.component.scss']
 })
 export class SidenavComponent {
-
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result => result.matches),
-      shareReplay()
-    );
-
-  constructor(private breakpointObserver: BreakpointObserver) {}
-
 }

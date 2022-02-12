@@ -1,0 +1,41 @@
+:host {
+    display: grid;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 24px;
+}
+
+.search-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+
+    .search-button {
+        margin-bottom: 15px;
+    }
+}
+
+.search-result {
+    padding: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 24px;
+
+    .mat-card {
+        width: 45%;
+    }
+}
+
+.mat-card-subtitle {
+    margin-bottom: 0px;
+}

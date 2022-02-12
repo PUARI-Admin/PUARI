@@ -23,6 +23,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { LoginComponent } from './login/login.component';
 import { UserregisterComponent } from './userregister/userregister.component';
 import { StoreModule } from '@ngrx/store';
+import { CategoryPipe } from './category.pipe';
+import { FinishComponent } from './finish/finish.component';
+import { LogoutComponent } from './logout/logout.component';
+import { ApplicationaprovalComponent } from './applicationaproval/applicationaproval.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { StoreModule } from '@ngrx/store';
     MainComponent,
     SidenavComponent,
     LoginComponent,
-    UserregisterComponent
+    UserregisterComponent,
+    LogoutComponent,
+    ApplicationaprovalComponent,
+    CategoryPipe,
+    FinishComponent
   ],
   imports: [
     BrowserModule,
