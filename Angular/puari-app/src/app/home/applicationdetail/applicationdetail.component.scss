@@ -1,0 +1,39 @@
+:host {
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mat-list {
+    margin-bottom: 24px;
+}
+.mat-subheader {
+    padding-left: 0;
+    font-size: x-large;
+}
+h2 {
+    margin-bottom:0px;
+}
+
+.mat-line {
+    font-size:larger;
+    margin-bottom: 8px;
+}
+
+.button-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+
+    .mat-raised-button {
+        width: 20%;
+    }
+}

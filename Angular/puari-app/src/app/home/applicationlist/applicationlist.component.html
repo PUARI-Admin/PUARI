@@ -1,0 +1,33 @@
+<div class="title">
+    <h1>
+        <b>申請一覧</b>
+    </h1>
+</div>
+
+<div class="search-area">
+    <mat-form-field class="input-name" appearance="fill">
+        <mat-label>姓</mat-label>
+        <input matInput placeholder="" value="">
+    </mat-form-field>
+    <mat-form-field class="input-name" appearance="fill">
+        <mat-label>名</mat-label>
+        <input matInput placeholder="" value="">
+    </mat-form-field>
+    <mat-form-field class="input-number" appearance="fill">
+        <mat-label>社員番号</mat-label>
+        <input matInput placeholder="" value="">
+    </mat-form-field>
+    <button mat-raised-button class="search-button" color="primary">検索</button>
+</div>
+
+<mat-divider></mat-divider>
+
+<div class="search-result">
+    <mat-card *ngFor="let application of applicationList" routerLink="details/{{application.id}}">
+        <mat-card-title>{{application.name.lastname}}{{application.name.firstname}}</mat-card-title>
+        <mat-card-subtitle>{{application.employeeNum}}</mat-card-subtitle>
+        <mat-card-subtitle>{{application.mail}}</mat-card-subtitle>
+        <mat-card-subtitle>{{application.category | appCategory}}</mat-card-subtitle>
+        <mat-card-footer align="end">{{application.date}}</mat-card-footer>
+    </mat-card>
+</div>
