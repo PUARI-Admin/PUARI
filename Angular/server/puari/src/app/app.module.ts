@@ -26,6 +26,10 @@ import { ApplicationaprovalComponent } from './applicationaproval/applicationapr
 import { StoreModule } from '@ngrx/store';
 import { CategoryPipe } from './category.pipe';
 import { FinishComponent } from './finish/finish.component';
+import { LogoutComponent } from './logout/logout.component';
+import { ApplicationaprovalComponent } from './applicationaproval/applicationaproval.component';
+import { ApplicationlistComponent } from './applicationlist/applicationlist.component';
+import { ApplicationconfirmComponent } from './applicationconfirm/applicationconfirm.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +42,8 @@ import { FinishComponent } from './finish/finish.component';
     LogoutComponent,
     ApplicationaprovalComponent,
     CategoryPipe,
-    FinishComponent
+    FinishComponent,
+    ApplicationconfirmComponent
   ],
   imports: [
     BrowserModule,
