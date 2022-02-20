@@ -8,5 +8,6 @@ services:
     image: mysql_server # イメージの名前
     environment:
       - MYSQL_ROOT_PASSWORD=puari123#   #コンテナ内のMySQLを起動する際のパスワードを設定
+      - COMPOSE_HTTP_TIMEOUT=1000
     ports:
       - "3306:3306"
