@@ -6,7 +6,6 @@ import { ApplicationlistComponent } from './applicationlist/applicationlist.comp
 import { FinishComponent } from './finish/finish.component';
 import { LoginComponent } from './login/login.component';
 import { UserregisterComponent } from './userregister/userregister.component'
-import { ApplicationconfirmComponent } from './applicationconfirm/applicationconfirm.component'
 
 const routes: Routes = [
   { path: '', component: LoginComponent},
@@ -16,7 +15,6 @@ const routes: Routes = [
   { path: 'approve', component: FinishComponent },
   { path: 'login', component: LoginComponent },
   { path: 'userregister', component: UserregisterComponent },
-  { path: 'confirm', component: ApplicationconfirmComponent },  
 ]
   ;
 

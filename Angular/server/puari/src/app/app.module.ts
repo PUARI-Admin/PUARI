@@ -28,7 +28,6 @@ import { FinishComponent } from './finish/finish.component';
 import { LogoutComponent } from './logout/logout.component';
 import { ApplicationaprovalComponent } from './applicationaproval/applicationaproval.component';
 import { ApplicationlistComponent } from './applicationlist/applicationlist.component';
-import { ApplicationconfirmComponent } from './applicationconfirm/applicationconfirm.component';
 
 @NgModule({
   declarations: [
@@ -43,8 +42,7 @@ import { ApplicationconfirmComponent } from './applicationconfirm/applicationcon
     ApplicationaprovalComponent,
     ApplicationlistComponent,
     CategoryPipe,
-    FinishComponent,
-    ApplicationconfirmComponent
+    FinishComponent
   ],
   imports: [
     BrowserModule,
