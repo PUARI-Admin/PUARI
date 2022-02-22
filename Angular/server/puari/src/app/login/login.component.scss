@@ -9,48 +9,34 @@
   flex-direction: row;
   justify-content: center;
   padding-top: 24px;
-//  background: red;
 }
 
-
 .item {
-//  background: #0bd;
   color: black;
-  margin:10px;
   padding:10px;
   text-align:center;
   width: 30%;
-  // width: 100px;
 }
 
 .container {
-//  background: yellow;
   display: flex;
   flex-direction: column;
-//  width: 100%;
-  align-items: center;
   justify-content: center;
-  // margin:50px;
-  // padding:10px;
 
-}
+  margin-left:30%;
+  margin-right:30%;
 
-.login-text {
-  width: 100%;
-  justify-content: center;
-//  align-items: right;
-//  text-align:center;
-//  height: 100px;
+  row-gap: 8px;
 
-}
+  .mat-form-field {
+    width: 90%;
+  } 
 
-.link {
-  width: 100%;
-  justify-content: left;
-  align-items: left;
-  text-align:left;
-//  height: 100px;
-
+  .userregister {
+    display: flex;
+    flex-direction: row;
+  }
+  
 }
 
 .button {

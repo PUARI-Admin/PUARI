@@ -1,35 +1,27 @@
-
-
-
-<div class="main" >
-    <div class="title">
-        <h1> <b>ログイン</b> </h1>
-    </div>
-
-    <div class="container">
-        <div class="item">
-            <mat-form-field appearance="fill" class="login-text">
-                <mat-label>ユーザID</mat-label>
-                <input matInput  >
-            </mat-form-field>
-        </div>
-        <div class="item">
-            <mat-form-field appearance="fill" class="login-text">
-                <mat-label>パスワード</mat-label>
-            <input matInput type="password">
-        </mat-form-field></div>
-        <div class="item">
-            <a routerLink="/userregister" class="link">ユーザ登録はこちら</a>
-        </div>
-        <div class="item">
-            <!-- <button mat-raised-button color="primary" routerLink="/applist" class="button">ログイン</button> -->
-            <button mat-raised-button color="primary" routerLink="/details/1" class="button">ログイン</button>            
-            
-        </div>
-
-    </div>
-
+<div class="title">
+    <h1> <b>ログイン</b> </h1>
 </div>
+
+<div class="container">
+    <mat-form-field appearance="fill">
+        <mat-label>ユーザID</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>パスワード</mat-label>
+        <input matInput type="password">
+    </mat-form-field>
+
+    <div class="userregister">
+        <a routerLink="/userregister">ユーザ登録はこちら</a>
+    </div>
+
+    <button mat-raised-button color="primary" routerLink="/details/1" class="button">ログイン</button>
+</div>
+
+
+
+
 
 
 
@@ -62,5 +54,3 @@
 </mat-grid-list>
 
 <mat-divider></mat-divider> -->
-
-
