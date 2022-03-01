@@ -1,0 +1,39 @@
+<div *ngIf="application">
+    <div class="title">
+        <h1> <b>{{application.category | appCategory}}申請</b> </h1>
+    </div>
+    <mat-list>
+        <div mat-subheader>
+            基本情報
+        </div>
+        <mat-divider></mat-divider>
+        <h2>姓</h2>
+        <div mat-line>{{ application.name.lastname }}</div>
+        <h2>名</h2>
+        <div mat-line>{{ application.name.firstname }}</div>
+        <h2>メールアドレス</h2>
+        <div mat-line>{{ application.mail }}</div>
+        <h2>社員番号</h2>
+        <div mat-line>{{ application.employeeNum }}</div>
+        <h2>会社名</h2>
+        <div mat-line>株式会社　XXX</div>
+        <h2>部署</h2>
+        <div mat-line>◯◯本部　××部</div>
+    </mat-list>
+    <mat-list>
+        <div mat-subheader>
+            アカウント情報
+        </div>
+        <mat-divider></mat-divider>
+
+        <h2>アカウントID</h2>
+        <div mat-line>FXXXX</div>
+    </mat-list>
+
+    <div class="button-area">
+        <button mat-raised-button color="primary" routerLink="/home/applicationlist">戻る</button>
+        <button mat-raised-button color="primary" routerLink="reject">差戻</button>
+        <button mat-raised-button color="primary" routerLink="approve">承認</button>
+    </div>
+
+</div>

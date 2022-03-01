@@ -1,0 +1,23 @@
+2021/12/xx_PUARI定例
+TODO
+１，githubのリポジトリ作成（石川）
+２，画面遷移図、画面レイアウト（石川）
+　・draw.ioで
+　・ログイン
+　・メインメニュー
+　・申請一覧画面
+　・ユーザ登録申請
+　　・登録画面
+　　・承認画面
+　　
+３，PC環境を整える(ko-jiさん)
+　・VSCode
+　・Docker
+　　・docker -v
+　　　Docker version 20.10.11, build dea9396
+　　・docker-compose -v
+　　　docker-compose version 1.29.2, build 5becea4c
+　・angular
+　　・記載しておく（石川）
+　
+４，Slack作成（石川）

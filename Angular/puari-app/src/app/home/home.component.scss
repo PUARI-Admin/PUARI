@@ -1,0 +1,15 @@
+.home-container {
+    height: 90%;
+    margin: 0px;
+    
+    &__list {
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        gap: 24px;
+    }
+
+    .mat-list-item {
+        font-size: large;
+    }
+}

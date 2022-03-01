@@ -1,0 +1,11 @@
+<mat-sidenav-container class="home-container">
+    <mat-sidenav mode="side" opened>
+        <div class="home-container__list">
+            <a mat-list-item routerLink="applicationlist">申請一覧</a>
+            <a mat-list-item routerLink="home">メインメニュー</a>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
